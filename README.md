@@ -51,12 +51,12 @@ Step6: Write all possible combinations of input using the test bench. Step7: Obt
 
 **PROGRAM
 ```
-module enc(a,b,c,y0,y1,y2,y3,y4,y5,y6,y7);
-input y0,y1,y2,y3,y4,y5,y6,y7;
-output a,b,c;
-assign a= ( y4 | y5 | y6 | y7);
-assign b= ( y2 | y3 | y6 | y7);
-assign c= ( y1 | y3 | y5 | y7);
+module encodder(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);
+input d0,d1,d2,d3,d4,d5,d6,d7;
+output a0,a1,a2;
+assign a0 = d1|d3|d5|d7;
+assign a1 =d2|d3|d6|d7;
+assign a2 =d4|d5|d6|d7;
 endmodule
 ```
 
@@ -66,10 +66,15 @@ Developed by: RegisterNumber:25018973
 */
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
-<img width="1920" height="1020" alt="2" src="https://github.com/user-attachments/assets/1285cecc-c564-4389-90dc-bd49b514d501" />
+
+<img width="505" height="397" alt="image" src="https://github.com/user-attachments/assets/2ddb7d67-97a2-4eb0-a000-71baa23495d8" />
+
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
-<img width="1920" height="1020" alt="3" src="https://github.com/user-attachments/assets/60f7be23-f853-46c5-bbf9-ee155dd981ec" />
+
+
+<img width="1911" height="666" alt="image" src="https://github.com/user-attachments/assets/6b2f6af1-a91b-4cb2-97b6-b3d7282f5608" />
+
 
 **RESULTS**
 Thus the encoder 8 to 3 data flow are designed and the truth tables is verified using quartus software
